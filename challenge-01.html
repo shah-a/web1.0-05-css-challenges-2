@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>Android - Example</title>
@@ -10,15 +10,15 @@
  typography for the entire page. */
     body {
       /* Set the font family to a San Serif */
-
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       /* Set the base font size 18px */
-
+      font-size: 18px;
       /* Set the line-height 1.5 */
-
+      line-height: 1.5;
       /* Set the foreground color #000 */
-
+      color: #000;
       /* Set the background color rgb(80, 134, 236) */
-
+      background-color: rgb(80, 134, 236);
     }
 
 
@@ -27,14 +27,14 @@
  child of the nav */
     nav>ul {
       /* remove the bullet */
-
+      list-style: none;
       /* remove the padding 0 */
-
+      padding: 0;
       /* Arrange all of the items in a row with flex */
       /* Flex arranges all of the children! */
       /* Use display: flex */
       /* display: flex; */
-
+      display: flex;
       /* This arranges all of the nav > ul > li tags in a row */
       /* The default arrangement is row */
       /* Try these two */
@@ -46,24 +46,24 @@
     /* Now style all of the links inside nav */
     nav a {
       /* Remove the underline text-decoration: none; */
-
+      text-decoration: none;
       /* set a background color #000 */
-
+      background-color: #000;
       /* Set the color of the text #fff */
-
+      color: #fff;
       /* add some space around the boxes margin: 1px */
-
+      margin: 1px;
       /* add some space between the content and the edge of the boxes */
       /* The first number is the padding on the top and bottom. */
       /* The second number is the padding on the left and right. */
       /* padding: 0.5rem 1rem; */
-
+      padding: 0.5rem 1rem;
       /* Make these elements display as a block */
       /* display: block; */
-
+      display: block;
       /* Round the corners */
       /* border-radius: 0.5rem; */
-
+      border-radius: 0.5rem;
     }
 
 
@@ -71,27 +71,27 @@
     /* Select the ul that is the descendant of a section */
     section ul {
       /* Display flex display: flex */
-
+      display: flex;
       /* Flex direction row flex-direction: row */
-
+      flex-direction: row;
       /* Arrange things in the center on the MAIN axis */
       /* justify-content: center; */
-
+      justify-content: center;
       /* Align things on the CROSS axis */
       /* Look closely at the Popular Picks and Featured Tablets sections */
       /* align-items: flex-end; */
-
+      align-items: flex-end;
       /* Remove the bullet points */
-
+      list-style: none;
       /* Remove padding 0 */
-
+      padding: 0;
     }
 
     /* Style the li tags that are children of ul tags that are children of sections */
     /* That's what this sector is saying! */
     section > ul > li {
       /* Add some margin: 1rem */
-
+      margin: 1rem;
       /* A rem is a root em it's the same as the font size set on the body */
       /* In this example you used 18px as the font-size set on the body */
       /* so 1rem here is equal to 18px */
@@ -102,19 +102,20 @@
     button {
       /* Set the font-size to the base font size set in the body. */
       /* font-size: 1rem; */
-
+      font-size: 1rem;
       /* Color #fff */
-
+      color: #fff;
       /* Remove the border */
       /* border: none; */
-
+      border: none;
       /* Background color rgb(19, 48, 64) */
-
+      background-color: rgb(19, 48, 64);
       /* Padding top and bottom of 1rem left and right of 1.5rem */
       /* padding: 1rem 1.5rem; */
-
+      padding: 1rem 1.5rem;
       /* Round the corners */
       /* border-radius: 100px; */
+      border-radius: 100px;
     }
 
 
@@ -123,21 +124,21 @@
     /* Let's style all of the child sections but only the odd numbers */
     section>section:nth-child(odd) {
       /* basckground color #fff */
-
+      background-color: #fff;
     }
 
 
     /* Style all child sections */
     section > section {
       /* These sections need some padding 2rem */
-
+      padding: 2rem;
     }
 
 
     /* make all the h2 tags really big */
     h2 {
       /* font size 4rem */
-
+      font-size: 4rem;
     }
 
     /* headings, paragraphs and other tags have a default 
@@ -145,6 +146,7 @@
     h1, h2, h3, h4, p {
       /* Set the margin only on the bottom */
       /* margin: 0 0 1rem 0; */
+      margin: 0 0 1rem 0;
     }
   </style>
 </head>
@@ -211,27 +213,27 @@
       </header>
 
       <p>Download a 4K movie in the blink of an eye. Jump on a group video call that never lags. Turn your living room
-        into an AR zombie apocalypse. 5G is taking phones to the next level &mdash, and they&rsquo;re only built on
+        into an AR zombie apocalypse. 5G is taking phones to the next level &mdash; and they&rsquo;re only built on
         Android.</p>
 
       <ul>
         <li>
-          <img src="images/samsung-galaxy-10-5g.png" width="165" height="auto" alt="Samsung Galaxy 10 5g">
+          <img src="images/samsung-galaxy-10-5g.png" width="165" alt="Samsung Galaxy 10 5g">
           <h4>Samsung</h4>
           <span>Galaxy 10 5G</span>
         </li>
         <li>
-          <img src="images/lg-v50-thinq-5g.png" width="165" height="auto" alt="LG V50 Thinq 5G">
+          <img src="images/lg-v50-thinq-5g.png" width="165" alt="LG V50 Thinq 5G">
           <h4>LG</h4>
           <span>V50 ThinQ 5G</span>
         </li>
         <li>
-          <img src="images/xiaomi-mi-mix-3-5g.png" width="165" height="auto" alt="Xiaomo Mi Mix 3 5G">
+          <img src="images/xiaomi-mi-mix-3-5g.png" width="165" alt="Xiaomo Mi Mix 3 5G">
           <h4>Xiaomi</h4>
           <span>Mi Mix 3 5G</span>
         </li>
         <li>
-          <img src="images/oppo-reno-5g.png" width="165" height="auto" alt="Oppo Reno 5G">
+          <img src="images/oppo-reno-5g.png" width="165" alt="Oppo Reno 5G">
           <h4>Oppo</h4>
           <span>Reno 5G</span>
         </li>
@@ -268,22 +270,22 @@
 
       <ul>
         <li>
-          <img src="images/google-pixel-3a.png" width="165" height="auto" alt="Google Pixel 3a">
+          <img src="images/google-pixel-3a.png" width="165" alt="Google Pixel 3a">
           <h4>Google</h4>
           <span>Pixel 3a</span>
         </li>
         <li>
-          <img src="images/motorola-moto-g7.png" width="165" height="auto" alt="Motorola Moto G7">
+          <img src="images/motorola-moto-g7.png" width="165" alt="Motorola Moto G7">
           <h4>Motorola</h4>
           <span>Moto G7</span>
         </li>
         <li>
-          <img src="images/oneplus-6t.png" width="165" height="auto" alt="OnePlus 6T">
+          <img src="images/oneplus-6t.png" width="165" alt="OnePlus 6T">
           <h4>OnePlus</h4>
           <span>6T</span>
         </li>
         <li>
-          <img src="images/sony-xperia-1.png" width="165" height="auto" alt="Sony Xperia">
+          <img src="images/sony-xperia-1.png" width="165" alt="Sony Xperia">
           <h4>Sony</h4>
           <span>Xperia 1</span>
         </li>
@@ -302,17 +304,17 @@
 
       <ul>
         <li>
-          <img src="images/samsung-galaxy-tab-s4.png" width="318" height="auto" alt="Samsung Galaxy Tab S4">
+          <img src="images/samsung-galaxy-tab-s4.png" width="318" alt="Samsung Galaxy Tab S4">
           <h4>Samsung</h4>
           <span>Galaxy Tab S4</span>
         </li>
         <li>
-          <img src="images/lenovo-tab-p10.png" width="318" height="auto" alt="Lenovo Tab P10">
+          <img src="images/lenovo-tab-p10.png" width="318" alt="Lenovo Tab P10">
           <h4>Lenovo</h4>
           <span>Tab P10</span>
         </li>
         <li>
-          <img src="images/lenovo-tab-p10-plus.png" width="318" height="auto" alt="Lenovo Tab P10 Plus">
+          <img src="images/lenovo-tab-p10-plus.png" width="318" alt="Lenovo Tab P10 Plus">
           <h4>Lenovo</h4>
           <span>Tab P10 Plus</span>
         </li>
@@ -352,22 +354,22 @@
 
       <ul>
         <li>
-          <img src="images/techno-spark-2.png" width="165" height="auto" alt="Tecno Spark 2">
+          <img src="images/techno-spark-2.png" width="165" alt="Tecno Spark 2">
           <h4>Tecno</h4>
           <span>Spark 2</span>
         </li>
         <li>
-          <img src="images/nokia-1-plus.png" width="165" height="auto" alt="Nokia 1 Plus">
+          <img src="images/nokia-1-plus.png" width="165" alt="Nokia 1 Plus">
           <h4>Nokia</h4>
           <span>1 Plus</span>
         </li>
         <li>
-          <img src="images/lava-z50.png" width="165" height="auto" alt="Lava Z50">
+          <img src="images/lava-z50.png" width="165" alt="Lava Z50">
           <h4>Lava</h4>
           <span>Z50</span>
         </li>
         <li>
-          <img src="images/lenovo-moto-e5-play.png" width="165" height="auto" alt="Lenovo Moto E5 Play">
+          <img src="images/lenovo-moto-e5-play.png" width="165" alt="Lenovo Moto E5 Play">
           <h4>Lenovo Moto</h4>
           <span>E5 Play</span>
         </li>
